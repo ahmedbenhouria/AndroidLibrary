@@ -55,9 +55,9 @@ publishing {
 
     publications {
         aar(MavenPublication) {
-            groupId = 'com'
-            artifactId = 'vyoo.mylibrary'
-            version '1.5'
+            groupId = 'com.vyoo.mylibrary'
+            artifactId = 'myLibrary'
+            version '1.6'
             artifact("myLibrary\\build\\outputs\\aar")
         }
     }
