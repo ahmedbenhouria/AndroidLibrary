@@ -48,7 +48,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/ahmedbenhouria/AndroidLibrary")
             credentials {
                 username = "ahmedbenhouria"
-                password = "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"
+                password = "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"
             }
         }
     }
@@ -58,6 +58,7 @@ publishing {
             groupId = 'com.github.ahmedbenhouria'
             artifactId = 'set-margin-view'
             version '1.0.0'
+            artifact("myLibrary\\build\\outputs\\aar")
         }
     }
 }
