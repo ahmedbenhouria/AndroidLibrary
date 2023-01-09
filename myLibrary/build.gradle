@@ -48,7 +48,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/ahmedbenhouria/AndroidLibrary")
             credentials {
                 username = "ahmedbenhouria"
-                password = "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"
+                password = project.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: ""
             }
         }
     }
@@ -56,9 +56,11 @@ publishing {
     publications {
         aar(MavenPublication) {
             groupId = 'com.vyoo.mylibrary'
-            artifactId = 'myLibrary'
-            version '1.6'
-            artifact("myLibrary\\build\\outputs\\aar")
+            artifactId = 'mylibrary-debug'
+            version '1.7'
+            artifact("build/outputs/aar/myLibrary-debug.aar")
         }
     }
 }
+
+
